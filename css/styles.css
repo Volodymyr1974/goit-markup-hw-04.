@@ -335,6 +335,49 @@ img {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    outline: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.items:not(:last-child) {
+    display: block;
+    margin-right: 10px;
+}
+
+
+/* .social-icon:not(:last-child) {
+    margin-right: 10px;
+} */
+
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    fill: #AFB1B8;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    background-color: var(--accent-color);
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--white-color-bgc-text);
 }
 
 .portfolio.list {
