@@ -131,9 +131,12 @@ img {
     padding-bottom: 32px;
 }
 
-.site-nav>.item:not(:last-child),
-.contacts>.item:not(:last-child) {
+.site-nav>.item:not(:last-child) {
     margin-right: 50px;
+}
+
+.contacts>.item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .site-nav .link {
@@ -161,16 +164,11 @@ img {
     margin-left: auto;
 }
 
-.mail {
+.mail,
+.phone {
     display: inline-block;
-    width: 16px;
-    height: 12px;
+    fill: currentColor;
     margin-right: 10px;
-}
-
-.mail:hover,
-.mail:focus {
-    fill: var(--accent-color);
 }
 
 .contacts .link {
@@ -179,6 +177,8 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .address .link {
