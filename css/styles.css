@@ -307,7 +307,8 @@ img {
 }
 
 .works-title,
-.team-title {
+.team-title,
+.customers-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -395,21 +396,65 @@ img {
     fill: var(--white-color-bgc-text);
 }
 
+
+/* Постоянные клиенты */
+
+.customers-list {
+    display: flex;
+    border: none;
+}
+
+.customers-item {
+    display: block;
+    width: 170px;
+    height: 92px;
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 1px solid #AFB1B8;
+    border-radius: 4px; */
+}
+
+.customers-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
+/* .customers-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+}
 .portfolio.list {
     display: flex;
     padding-left: 0;
     justify-content: center;
     margin-bottom: 50px;
 }
-
 .portfolio.list .item {
     border-radius: 4px;
 }
-
 .portfolio.list .item:not(:last-child) {
     margin-right: 8px;
 }
-
 .flex-box {
     display: flex;
     padding-left: 0;
@@ -417,71 +462,57 @@ img {
     margin-left: -30px;
     margin-top: -30px;
 }
-
 .flex-box>.item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
     border: 1px solid #EEEEEE;
 }
-
 .portfolio-box {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
 }
-
 .portfolio-subject {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }
-
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
 }
 
-
 /* Футер */
-
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .footer .logo {
     display: block;
     margin-bottom: 20px;
 }
-
 .text.end {
     color: var(--white-color-bgc-text);
 }
-
 .address {
     color: var(--white-color-bgc-text);
     font-style: normal;
     line-height: 1.71;
 }
-
 .address .text {
     margin-bottom: 9px;
 }
-
 .address .list {
     padding: 0;
 }
-
 .address-list>.item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-
 /* Кнопки */
-
 .btn {
     background-color: var(--secondary-bgc-color);
     color: var(--primary-text-color);
@@ -499,7 +530,6 @@ img {
     border: 0;
     border-radius: 4px;
 }
-
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
