@@ -64,6 +64,7 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    /* outline: 1px solid red; */
 }
 
 .visually-hidden {
@@ -351,7 +352,7 @@ img {
 
 .social-links {
     display: flex;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     justify-content: center;
     align-items: center;
     /* fill: #AFB1B8; */
@@ -442,19 +443,23 @@ img {
     align-items: center; */
 
 
-}
+/* портфолио */
+
 .portfolio.list {
     display: flex;
     padding-left: 0;
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .portfolio.list .item {
     border-radius: 4px;
 }
+
 .portfolio.list .item:not(:last-child) {
     margin-right: 8px;
 }
+
 .flex-box {
     display: flex;
     padding-left: 0;
@@ -462,57 +467,105 @@ img {
     margin-left: -30px;
     margin-top: -30px;
 }
+
 .flex-box>.item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
     border: 1px solid #EEEEEE;
 }
+
 .portfolio-box {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
 }
+
 .portfolio-subject {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }
+
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
 }
 
+
 /* Футер */
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-box {
+    display: flex;
+    /* align-items: center; */
+}
+
+.address-box {
+    display: block;
+    margin-right: 70px;
+}
+
 .footer .logo {
     display: block;
     margin-bottom: 20px;
 }
+
 .text.end {
     color: var(--white-color-bgc-text);
 }
+
 .address {
     color: var(--white-color-bgc-text);
     font-style: normal;
     line-height: 1.71;
 }
+
 .address .text {
     margin-bottom: 9px;
 }
+
 .address .list {
     padding: 0;
 }
+
 .address-list>.item:not(:last-child) {
     margin-bottom: 9px;
 }
 
+.social-networks {
+    width: 206px;
+    height: 80px;
+    padding-top: 12px;
+}
+
+.join {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--white-color-bgc-text);
+}
+
+.ftr {
+    fill: var(--white-color-bgc-text);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ftr:hover,
+.ftr:focus {
+    background-color: var(--accent-color);
+}
+
+
 /* Кнопки */
+
 .btn {
     background-color: var(--secondary-bgc-color);
     color: var(--primary-text-color);
@@ -530,6 +583,7 @@ img {
     border: 0;
     border-radius: 4px;
 }
+
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
