@@ -489,6 +489,7 @@ img {
 
 .footer-box {
     display: flex;
+    align-items: baseline;
 }
 
 .address-box {
@@ -523,11 +524,12 @@ img {
     margin-bottom: 9px;
 }
 
-.social-networks {
+
+/* .social-networks {
     width: 206px;
     height: 80px;
     padding-top: 12px;
-}
+} */
 
 .join {
     font-size: 14px;
